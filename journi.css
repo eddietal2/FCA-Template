@@ -24,7 +24,7 @@ background-attachment: fixed;
   background: #888;
   height: 250px;
   background-size: contain;
-  background-image: url('../eddietaliaferro.com/src/assets/photo.png');
+  background-image: url('./photo.png');
 }
 #about {
   height: auto;
@@ -119,13 +119,16 @@ li {
   #about, #soft-skills, #hard-skills {
     padding: 1em;
   }
+  h1 {
+    font-size: 2em;
+  }
   #soft-skills, #hard-skills {
     padding: 1em;
     height: 400px;
     border-radius: 50px 50px 0px 0px;
   }
   #about {
-    height: 600px;
+    height: 700px;
     border-radius: 50px 50px 0px 0px;
   }
   #header-info {
