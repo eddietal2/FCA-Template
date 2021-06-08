@@ -2,6 +2,14 @@ body {
   margin: 0;
   font-family: Helvetica;
 }
+li {
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
 #header {
   height: 50vh;
   width: 100%;
@@ -32,40 +40,6 @@ background-attachment: fixed;
   opacity: 0;
   animation: slide-in-left 0.5s ease-out 0.2s forwards;
 }
-
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-#about {
-  height: auto;
-  /* width: 100%; */
-  margin: 0 auto;
-  position: relative;
-  top: 180px;
-  z-index: -2;
-  padding: 7em 20em 13em 20em;
-  background: #f6f6f6;
-  border-radius: 50px 50px 0px 0px;
-}
-.about-text {
-  font-size: 1.3em;
-  width: 100%;
-}
 #hard-skills {
   height: 300px;
   /* width: 100%; */
@@ -85,10 +59,20 @@ background-attachment: fixed;
   background: #d5d5d5;
   border-radius: 50px 50px 0px 0px;
 }
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 1em;
+#about {
+  height: auto;
+  /* width: 100%; */
+  margin: 0 auto;
+  position: relative;
+  top: 180px;
+  z-index: -2;
+  padding: 7em 20em 13em 20em;
+  background: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+}
+.about-text {
+  font-size: 1.3em;
+  width: 100%;
 }
 .card {
   width: 600px;
@@ -100,12 +84,24 @@ h1 {
   font-size: 1.3em;
   border-radius: 10px;
 }
-
-li {
-  font-size: 1.4em;
-  margin: 1em 0;
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
-
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 @media screen and (max-width: 1000px){
   #about, #soft-skills, #hard-skills {
     padding: 4em;
